@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<repositories version="1.0">
+<repo priority="50" quality="experimental" status="unofficial">
+<name>sac</name>
+<description>Gentoo overlay for The single assignment C compiler</description>
+<homepage>http://www.sac-home.org</homepage>
+<owner>
+<email></email>
+</owner>
+<source type="git">git://geeser.chickenkiller.com:sac.git</source>
+</repo>
+</repositories>
