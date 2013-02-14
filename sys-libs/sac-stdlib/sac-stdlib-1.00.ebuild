@@ -25,5 +25,6 @@ src_prepare() {
 }
 
 src_configure() {
+	cd stdlib
 	econf
 }
