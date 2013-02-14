@@ -16,7 +16,7 @@ KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="sys-devel/sac"
-RDEPEND="${DEPEND}"
+RDEPEND=""
 
 src_prepare() {
 	econf
