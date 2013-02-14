@@ -17,4 +17,3 @@ DEPEND=""
 RDEPEND="sys-devel/sac2c
 		 sys-libs/sac-stdlib
 		"
-

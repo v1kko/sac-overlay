@@ -23,9 +23,6 @@ RDEPEND="
 	${DEPEND}
 	"
 
-src_prepare(){
-	ls -al
-}
 
 src_install() {
 	ls -al
