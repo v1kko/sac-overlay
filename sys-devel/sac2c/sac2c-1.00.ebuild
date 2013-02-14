@@ -25,5 +25,5 @@ RDEPEND="
 
 
 src_install() {
-	ls -al
+	dobin bin/*
 }
