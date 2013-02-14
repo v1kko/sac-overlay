@@ -34,6 +34,7 @@ src_install() {
 	cp .revision.txt ${confdir}
 	cp sac2crc ${confdir}
 	cp -r setup ${confdir}
+	mkdir -p ${D}/etc/env.d
 	echo -e "#Environment variables for sac\n" > ${D}/etc/env.d/42sac
 	echo -e "SACBASE=/etc/sac/\n" >> ${D}/etc/env.d/42sac
 	echo -e "SAC2CBASE=/etc/sac/sac2c\n" >> ${D}/etc/env.d/42sac
