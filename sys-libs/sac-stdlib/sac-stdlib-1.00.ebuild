@@ -28,3 +28,8 @@ src_configure() {
 	cd stdlib
 	econf
 }
+
+src_compile() {
+	cd stdlib
+	emake
+}

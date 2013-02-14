@@ -49,4 +49,5 @@ src_install() {
 
 pkg_postinst() {
 	env-update
+	source /etc/profile
 }
