@@ -33,3 +33,8 @@ src_compile() {
 	cd stdlib
 	emake mtfast
 }
+
+src_install() {
+	dolib.so stdlib/world/stdio/lib/*.so	
+}
+
