@@ -31,10 +31,16 @@ src_configure() {
 
 src_compile() {
 	cd stdlib
-	emake mtfast
+	nonfatal emake mtfast || nonfatal emake mtfast || nonfatal emake mtfast ||
+	nonfatal emake mtfast || nonfatal emake mtfast || die "retry count exceeded"
 }
 
 src_install() {
 	dolib.so stdlib/world/stdio/lib/*.so	
 }
 
+pkg_info() {
+	ewarn "Make with -j isn't stable yet"
+	ewarn "This ebuild will restart emake 5 times for above reason"
+	ewarn "If it still crashes, compile without -j flag"
+}
