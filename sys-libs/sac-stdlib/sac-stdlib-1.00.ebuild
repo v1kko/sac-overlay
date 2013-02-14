@@ -31,5 +31,5 @@ src_configure() {
 
 src_compile() {
 	cd stdlib
-	emake
+	emake mtfast
 }
