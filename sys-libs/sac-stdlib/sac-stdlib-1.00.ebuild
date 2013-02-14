@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="sys-devel/sac"
+DEPEND="sys-devel/sac2c"
 RDEPEND=""
 
 src_prepare() {
