@@ -46,3 +46,7 @@ src_install() {
 	echo -e "SAC2CBASE=/etc/sac/sac2c\n" >> ${D}/etc/env.d/42sac
 	#echo -e "LD_LIBRARY_PATH=/usr/lib" >> ${D}/etc/env.d/42sac
 }
+
+pkg_postinst() {
+	env-update
+}
