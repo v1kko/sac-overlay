@@ -34,7 +34,10 @@ src_install() {
 	cp .revision.txt ${confdir}
 	cp sac2crc ${confdir}
 	cp -r setup ${confdir}
+
+	# which sane program needs this symlinks
 	ln -s /usr/lib ${confdir}/lib
+	ln -s /usr/bin ${confdir}/bin
 
 	mkdir -p ${D}/etc/env.d
 	echo -e "#Environment variables for sac\n" > ${D}/etc/env.d/42sac
