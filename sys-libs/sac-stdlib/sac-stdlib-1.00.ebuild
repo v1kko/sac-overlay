@@ -4,7 +4,9 @@
 
 EAPI=4
 
-DESCRIPTION="Single Assignment C Compiler"
+inherit eutils
+
+DESCRIPTION="Standard library for Single Assignment C"
 HOMEPAGE="http://www.sac-home.org"
 SRC_URI="http://geeser.chickenkiller.com/${P}.tbz"
 
@@ -13,17 +15,9 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="
-	sys-devel/gcc
-	sys-devel/bison
-	sys-devel/flex
-	"
+DEPEND="sys-devel/sac"
+RDEPEND="${DEPEND}"
 
-RDEPEND="
-	${DEPEND}
-	sys-libs/sac-stdlib
-	"
-
-src_install() {
-	ls -al
+src_prepare() {
+	econf
 }
