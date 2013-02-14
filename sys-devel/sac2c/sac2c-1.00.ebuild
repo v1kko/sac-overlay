@@ -4,7 +4,7 @@
 
 EAPI=4
 
-DESCRIPTION="Single Assignment C Compiler"
+DESCRIPTION="Single Assignment C to C Compiler"
 HOMEPAGE="http://www.sac-home.org"
 SRC_URI="http://geeser.chickenkiller.com/${P}.tbz"
 
@@ -21,7 +21,6 @@ DEPEND="
 
 RDEPEND="
 	${DEPEND}
-	sys-libs/sac-stdlib
 	"
 
 src_install() {
