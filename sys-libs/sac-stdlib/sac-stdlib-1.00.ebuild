@@ -19,5 +19,11 @@ DEPEND="sys-devel/sac2c"
 RDEPEND=""
 
 src_prepare() {
+	export SACBASE="`pwd`"
+	export SAC2CBASE="`pwd`/sac2c"
+	ln -s /etc/sac/sac2c sac2c
+}
+
+src_configure() {
 	econf
 }

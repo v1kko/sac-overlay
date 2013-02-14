@@ -41,8 +41,8 @@ src_install() {
 
 	mkdir -p ${D}/etc/env.d
 	echo -e "#Environment variables for sac\n" > ${D}/etc/env.d/42sac
-	echo -e "SACBASE=/etc/sac/\n" >> ${D}/etc/env.d/42sac
+	#echo -e "SACBASE=/etc/sac/\n" >> ${D}/etc/env.d/42sac
 	# Sac2c fails at normal linux library loading so use the environment
 	echo -e "SAC2CBASE=/etc/sac/sac2c\n" >> ${D}/etc/env.d/42sac
-	echo -e "LD_LIBRARY_PATH=/usr/lib" >> ${D}/etc/env.d/42sac
+	#echo -e "LD_LIBRARY_PATH=/usr/lib" >> ${D}/etc/env.d/42sac
 }
